@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="web-app">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta http-equiv="pragma" content="no-cache" />
+	    <link rel="shortcut icon" href="/img/videoken.png" type="image/png">
+	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	    
+	    <title>Videoken</title>
+	    <base href="/">
+   		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+	    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Gudea">
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	   	<link href="/css/materialize-style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<script src="/js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/sweet-alert/sweetalert.css">
+		<link rel="stylesheet" type="text/css" href="/css/sweet-alert/facebook/facebook.css">   
+	</head>
+	<body>
+		<header>	
+ 		</header>
+		<main>
+			<nav>
+	    		<div class="nav-wrapper z-depth-0 black" ng-controller="musicController">
+	    			<ul class="hide-on-med-and-down right">      	 
+	    				<li><a href="" ng-click="signout()">Signout</a></li>       
+	    			</ul>
+	    		</div>
+	 		</nav>
+			<div ng-view></div>
+		</main>								
+	</body>
+</html>

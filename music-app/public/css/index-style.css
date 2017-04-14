@@ -1,0 +1,15 @@
+.img-container{
+	height:200px;
+	width:200px;
+}
+#head{
+	font-family: Castellar;
+}
+#logo-container{
+	height:54px;
+}
+@media only screen and (min-width: 601px){
+ #logo-container{
+	height:64px;
+}	
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="livesport-main">
+	<head>
+  		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  		<title>Videoken</title>
+
+		<base href="/">
+		<link rel="shortcut icon" href="/img/videoken.png" type="image/png">
+   
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    	<script src="/js/main.js"></script>
+
+  		<!-- CSS  -->
+  		<link href="/css/sweet-alert/sweetalert.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  		<link href="/css/index-style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+   		<link href="/css/materialize-style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	</head>
+	<body class="blue lighten-2 " ng-controller="MainController">
+		<div class="row " >
+  			<div class="col s10 m4 l6 offset-s1 offset-m4 offset-l3  white z-index-1 " style="top:50px;position:relative">
+  				<div class="row col l12 m12 s12">
+        			<div class="input-field col l12 m12 s12">
+    					<p style="text-align:center;margin:0px" class="purple">
+   							<img class="circle responsive-img  " src="/img/videoken.png"   align="middle">
+   						</p> 
+  					</div>
+     			</div>
+     			<div class="row col l12 m12 s12">
+        			<div class="input-field col l12 m12 s12">
+    					<p class="center login-form-text">Welcome to Videoken</p>
+  					</div>
+     			</div>		
+    			<div class="row col l12 m12 s12">
+     				<form class="col s12" >
+      					<div class="row">
+        					<div class="input-field col s12" ng-submit="clearScreen()">
+          						<i class="material-icons prefix">account_circle</i>
+          						<input id="icon_prefix" type="text" class="validate" ng-model="user.username"  placeholder="username or email">
+          						<label for="icon_prefix">User Name</label>
+        					</div>
+        					<div class="input-field col s12">
+         						<i class="material-icons prefix">lock_outline</i>
+          						<input id="password" type="password" class="validate" ng-model="user.password" placeholder="password">
+          						<label for="Password">Password</label>
+        					</div> 
+        					<div class="center">
+        						<button class="btn waves-effect center waves-light" type="submit" name="action" ng-click="login()" >Log In
+        							<i class="material-icons right">send</i></button>
+        					</div>
+     					</div>   
+  					</form>
+  				</div>
+  			</div>
+  		</div>
+	</body>
+</html>
